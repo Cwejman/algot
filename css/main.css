@@ -1,22 +1,3 @@
-@-webkit-keyframes up {
-	0% {
-		bottom: 0;
-    opacity: 0
-	}
-	5% {
-		top: 100vh;
-
-    opacity: 1
-	}
-	80% {
-		opacity: 1;
-	}
-	100% {
-		top: 0;
-    opacity: 0;
-	}
-}
-
 @keyframes up {
 	0% {
 		bottom: 0;
@@ -33,15 +14,6 @@
 	100% {
 		top: 0;
     opacity: 0;
-	}
-}
-
-@-webkit-keyframes wobble {
-	0% {
-		margin-left: 0px;
-	}
-	50% {
-		margin-left: 15px;
 	}
 }
 
@@ -74,7 +46,6 @@ body {
 .light {
   width: 200vw;
   left: -50vw;
-  background: -webkit-radial-gradient(top center ellipse, rgba(255, 234, 0, 0.05) 0%, rgba(231, 56, 39, 0) 50%);
   background: radial-gradient(ellipse at top center, rgba(255, 234, 0, 0.05) 0%, rgba(231, 56, 39, 0) 50%);
 }
 
@@ -84,10 +55,8 @@ body {
   height: 10px;
   background-color: rgb(90, 111, 131);
   border-radius: 50%;
-  -webkit-animation: wobble 1s ease-in-out, up 4s ease-out;
-          animation: wobble 1s ease-in-out, up 4s ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;;
+  animation: wobble 1s ease-in-out, up 4s ease-out;
+  animation-iteration-count: infinite;;
 }
 
 .section {
@@ -105,18 +74,18 @@ body {
 }
 
 .small {
-  width: 50px;
-  height: 50px;
+  width: calc(100vmin / 16);
+  height: calc(100vmin / 16);
 }
 
 .medium {
-  height: 75px;
-  width: 75px;
+	width: calc(100vmin / 11);
+  height: calc(100vmin / 11);
 }
 
 .big {
-  width: 100px;
-  height: 100px
+	width: calc(100vmin / 6);
+  height: calc(100vmin / 6);
 }
 
 .huge {
@@ -132,8 +101,7 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .container .fish {
@@ -153,41 +121,33 @@ body {
 }
 
 .r-3 {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .r-6 {
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
 }
 
 .r-12 {
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
+  transform: rotate(120deg);
 }
 
 .r-15 {
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 .r-21 {
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
+  transform: rotate(210deg);
 }
 
 .r-24 {
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
+  transform: rotate(240deg);
 }
 
 .r-30 {
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
+  transform: rotate(300deg);
 }
 
 .r-33 {
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  transform: rotate(330deg);
 }
