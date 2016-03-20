@@ -133,6 +133,11 @@ body {
   height: 100vh;
 }
 
+.date {
+  font-size: 5vmin !important;
+  margin-top: 0 !important;
+}
+
 .container {
   position: relative;
   top: 50%;
@@ -146,6 +151,18 @@ body {
 }
 
 .container .title {
+  font-family: 'cabana-font';
+  font-size: 8vmin;
+  font-weight: bold;
+  margin-top: -10px;
+  letter-spacing: 6px;
+  text-align: center;
+  width: 100%;
+  color: rgba(246, 243, 225, 1);
+  /*text-shadow: 4px 4px 0px rgba(0, 173, 204, 0.2);*/
+}
+
+.container .title-small {
   font-family: 'cabana-font';
   font-size: 8vmin;
   font-weight: bold;
