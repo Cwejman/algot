@@ -5,38 +5,38 @@
 
 @-webkit-keyframes up {
 	0% {
-		bottom: 0;
-    opacity: 0
+		top: 100vh;
 	}
 	5% {
-		top: 100vh;
-
     opacity: 1
 	}
 	80% {
 		opacity: 1;
 	}
+  90% {
+    opacity: 0
+  }
 	100% {
-		top: 0;
+		top: -20px;
     opacity: 0;
 	}
 }
 
 @keyframes up {
 	0% {
-		bottom: 0;
-    opacity: 0
+		top: 100vh;
 	}
 	5% {
-		top: 100vh;
-
     opacity: 1
 	}
 	80% {
 		opacity: 1;
 	}
+  90% {
+    opacity: 0
+  }
 	100% {
-		top: 0;
+		top: -20px;
     opacity: 0;
 	}
 }
@@ -85,6 +85,7 @@ body {
 
 .bubble {
   position: fixed;
+  top: -20px;
   width: 10px;
   height: 10px;
   background-color: rgb(90, 111, 131);
