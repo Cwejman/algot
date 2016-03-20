@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'cabana-font';
+  src: url('../res/cabana.otf');
+}
+
 @-webkit-keyframes up {
 	0% {
 		bottom: 0;
@@ -105,27 +110,32 @@ body {
 }
 
 .small {
-  width: 50px;
-  height: 50px;
+  width: calc(100vmin / 16);
+  height: calc(100vmin / 16);
 }
 
 .medium {
-  height: 75px;
-  width: 75px;
+	width: calc(100vmin / 11);
+  height: calc(100vmin / 11);
 }
 
 .big {
-  width: 100px;
-  height: 100px
+	width: calc(100vmin / 6);
+  height: calc(100vmin / 6);
 }
 
 .huge {
-  width: 150px;
-  height: 150px;
+	width: calc(100vmin / 4);
+  height: calc(100vmin / 4);
 }
 
 .home {
   height: 100vh;
+}
+
+.date {
+  font-size: 5vmin !important;
+  margin-top: 0 !important;
 }
 
 .container {
@@ -141,8 +151,20 @@ body {
 }
 
 .container .title {
-  font-family: Cabana;
-  font-size: 60px;
+  font-family: 'cabana-font';
+  font-size: 8vmin;
+  font-weight: bold;
+  margin-top: -10px;
+  letter-spacing: 6px;
+  text-align: center;
+  width: 100%;
+  color: rgba(246, 243, 225, 1);
+  /*text-shadow: 4px 4px 0px rgba(0, 173, 204, 0.2);*/
+}
+
+.container .title-small {
+  font-family: 'cabana-font';
+  font-size: 8vmin;
   font-weight: bold;
   margin-top: -10px;
   letter-spacing: 6px;
