@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<div id="nav-container" ng-class="{light:scrollPos >= switchPos}">
+  <div class="nav-name">
+    <div class="bold">ALGOTFESTIVALEN</div>
+  </div>
+
+  <div class="nav-menu desktop">
+    <div class="nav-btn thin" ng-click="goto(0)" ng-class="{'bold': state == 'one'}">HOME</div>
+    <div class="nav-btn gray">&nbsp;|&nbsp;</div>
+    <div class="nav-btn thin" ng-click="goto('#tickets')" ng-class="{'bold': state == 'two'}">TICKETS </div>
+  </div>
+
+  <div class="nav-menu mobile">
+    <i ng-class="{'ion-navicon': !mobile, 'ion-android-close': mobile}" ng-click="mobile = !mobile"></i>
+  </div>
+
+</div>
+
+<div id="nav-menu-mobile" ng-if="mobile">
+  <div class="nav-btn mobile" ng-click="goto(0)" ng-class="{'bold': state == 'one'}">HOME</div>
+  <div class="nav-btn mobile" ng-click="goto('#tickets')" ng-class="{'bold': state == 'two'}">TICKETS</div>
+</div>
