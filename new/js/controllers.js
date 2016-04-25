@@ -34,7 +34,8 @@ angular.module('controllers', [])
   scroll.add(function() {
     var scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0
     var minus = scrollPos / $scope.height * 2
-    if (minus < 0) $scope.opacity = 0
+    if (minus < 0 && scrollPos < 0) $scope.opacity = 1
+    else if (minus < 0) $scope.opacity = 0
     else $scope.opacity = 1 - scrollPos /$scope.height * 2
     $scope.$apply()
   })
