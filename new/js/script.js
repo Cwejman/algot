@@ -24,32 +24,6 @@ window.onload = function() {
     ]
   }
 
-  // function rotate () {
-  //   rotation++
-  //   if (rotation > resolution) rotation = 0
-  //
-  //   var t = 6.28319 * rotation / resolution
-  //   var x = radius * Math.cos(t)
-  //   var y = radius * 0.66 * Math.sin(t)
-  //   var move = positions(x, y)
-  //
-  //   $('.one').css('transform', 'translate(' + move[0].x + 'px ,' + move[0].y + 'px)')
-  //   $('.two').css('transform', 'translate(' + move[1].x + 'px ,' + move[0].y + 'px)')
-  //   $('.three').css('transform', 'translate(' + move[2].x + 'px ,' + move[0].y + 'px)')
-  //
-  // }
-  //
-  // function repeat () {
-  //   var nowTime = new Date()
-  //   if (nowTime - lastTime > 1000 / fps) {
-  //     rotate()
-  //     lastTime = nowTime
-  //   }
-  //   window.requestAnimationFrame(repeat)
-  // }
-  //
-  // repeat()
-
   $('body').mousemove(function (e) {
 
       move = positions(e.pageX, e.pageY)
