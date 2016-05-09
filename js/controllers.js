@@ -10,7 +10,7 @@ angular.module('controllers', [])
     $scope.mobile = false;
     var position = (typeof element == "string") ? $(element).offset().top : element
     $('html, body').animate({
-      scrollTop: position
+      scrollTop: position - 50
     }, 1000)
   }
 
