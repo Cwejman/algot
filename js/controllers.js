@@ -64,6 +64,10 @@ angular.module('controllers', [])
 
 })
 
+.controller('MapCtrl', function ($scope) {
+
+})
+
 .controller('FootCtrl', function ($scope) {
 
 })

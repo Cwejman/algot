@@ -22,6 +22,10 @@ angular.module('algot', ['ui.router', 'controllers', 'services', 'duScroll'])
         templateUrl: 'partials/tickets.html',
         controller: 'TicketCtrl'
       },
+      'three': {
+        templateUrl: 'partials/karta.html',
+        controller: 'MapCtrl'
+      },
       'footer': {
         templateUrl: 'partials/footer.html',
         controller: 'FootCtrl'
