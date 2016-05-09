@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<div id="tickets">
+  <div class="tickets-head">
+    <div class="tickets-title">BILJETTER</div>
+  </div>
+  <div class="tickets-container">
+
+    <div class="tickets-text">
+      Biljett till Algotfestivalen inklusive 3-dagars stödmedlemskap i Algotföreningen kostar 300kr. Läs mer om hur du betalar:
+    </div>
+
+    <div class="tickets-buttons">
+      <div ng-click="changeState(1)">
+        Swish
+      </div>
+      <div ng-click="changeState(2)">
+        Annan
+      </div>
+    </div>
+
+    <div class="tickets-text-drop" ng-if="state == 1">
+      <p>
+        Betalning sker via Swish. I meddelandet för betalningen anger du ditt personnummer (ÅÅMMDD) samt för- och efternamn. Endast en biljett per Swish-betalning är möjlig. Om du vill Swisha åt en vän anger du i meddelandet din väns personnummer, mobiltelefonnummer samt hens för- och efternamn. En sms-bekräftelse på ditt biljettköp är att vänta inom en vecka!
+
+      </p>
+    </div>
+
+    <div class="tickets-text-drop" ng-if="state == 2">
+      <p>
+        Om du inte vill betala via Swish så skicka ett mail med ditt för- och efternamn samt personnummer (ÅÅMMDD) till biljetter@algotfestivalen.se så svarar vi inom en vecka.
+      </p>
+    </div>
+
+    <div id="scrollme">
+
+    </div>
+  </div>
+</div>
