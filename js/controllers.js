@@ -106,8 +106,8 @@ angular.module('controllers', [])
       info: "LÖRDAG"
     },
     {
-      name: "ANTON EGO",
-      link: "https://open.spotify.com/artist/1EykFHOcNRjMx644YEKCr4",
+      name: "PIKELET",
+      link: "https://open.spotify.com/artist/5rTGJCFkCikyELEJjson93",
       info: "LÖRDAG"
     },
     {
