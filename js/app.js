@@ -19,10 +19,18 @@ angular.module('algot', ['ui.router', 'controllers', 'services', 'duScroll'])
         controller: 'HomeCtrl'
       },
       'two': {
+        templateUrl: 'partials/artists.html',
+        controller: 'ArtistsCtrl'
+      },
+      'three': {
         templateUrl: 'partials/tickets.html',
         controller: 'TicketCtrl'
       },
-      'three': {
+      'four': {
+        templateUrl: 'partials/info.html',
+        controller: 'InfoCtrl'
+      },
+      'five': {
         templateUrl: 'partials/karta.html',
         controller: 'MapCtrl'
       },

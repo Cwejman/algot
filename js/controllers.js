@@ -51,17 +51,81 @@ angular.module('controllers', [])
 
   $scope.state = 0
 
-
   $scope.changeState = function (state) {
     if (this.state == state) this.state = 0
     else {
       this.state = state
-      $('html, body').animate({
-        scrollTop: $('#scrollme').offset().top
-      }, 1000)
+      // $('html, body').animate({
+      //   scrollTop: $('#scrollme').offset().top
+      // }, 1000)
     }
   }
 
+})
+
+.controller('InfoCtrl', function ($scope) {
+
+})
+
+.controller('ArtistsCtrl', function ($scope, $location) {
+
+  $scope.go = function(url) {
+    console.log(url)
+    window.open(url)
+  }
+
+  $scope.artists = [
+    {
+      name: "ECHOLALIA",
+      link: "https://soundcloud.com/echolaliamusic",
+      info: "FREDAG"
+    },
+    {
+      name: "THE NAIMA TRAIN",
+      link: "https://open.spotify.com/artist/1Lar7KTWe5CeISnpNx3x7U",
+      info: "FREDAG"
+    },
+    {
+      name: "ANNELIE",
+      link: "https://open.spotify.com/artist/4qpmvsNvASnzwCZakPwtXC",
+      info: "FREDAG"
+    },
+    {
+      name: "HANNAH PRESCOTT",
+      link: "",
+      info: "FREDAG"
+    },
+    {
+      name: "FX-RAY",
+      link: "http://soundcloud.com/fx-ray/",
+      info: "FREDAG"
+    },
+    {
+      name: "DANIELLA KRUTH",
+      link: "https://open.spotify.com/artist/6HT09HxRhT4y8QpKmTdjkr",
+      info: "LÖRDAG"
+    },
+    {
+      name: "ANTON EGO",
+      link: "https://open.spotify.com/artist/1EykFHOcNRjMx644YEKCr4",
+      info: "LÖRDAG"
+    },
+    {
+      name: "ORKAN",
+      link: "https://soundcloud.com/bandetorkan",
+      info: "LÖRDAG"
+    },
+    {
+      name: "SALTSTEN SOUND",
+      link: "http://soundcloud.com/saltstensound/",
+      info: "LÖRDAG"
+    },
+    {
+      name: "TEGELBRUK",
+      link: "http://soundcloud.com/tegelbruk/",
+      info: "LÖRDAG"
+    }
+  ]
 })
 
 .controller('MapCtrl', function ($scope) {

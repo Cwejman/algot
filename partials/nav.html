@@ -8,9 +8,13 @@
   <div class="nav-menu desktop">
     <div class="nav-btn thin" ng-click="goto(0)" ng-class="{'bold': state == 'one'}">HEM</div>
     <div class="nav-btn gray">&nbsp;|&nbsp;</div>
-    <div class="nav-btn thin" ng-click="goto('#tickets')" ng-class="{'bold': state == 'two'}">BILJETTER </div>
+    <div class="nav-btn thin" ng-click="goto('#artists')" ng-class="{'bold': state == 'two'}">ARTISTER </div>
     <div class="nav-btn gray">&nbsp;|&nbsp;</div>
-    <div class="nav-btn thin" ng-click="goto('#karta')" ng-class="{'bold': state == 'three'}">KARTA </div>
+    <div class="nav-btn thin" ng-click="goto('#info')" ng-class="{'bold': state == 'four'}">INFO </div>
+    <div class="nav-btn gray">&nbsp;|&nbsp;</div>
+    <div class="nav-btn thin" ng-click="goto('#tickets')" ng-class="{'bold': state == 'three'}">BILJETTER </div>
+    <div class="nav-btn gray">&nbsp;|&nbsp;</div>
+    <div class="nav-btn thin" ng-click="goto('#karta')" ng-class="{'bold': state == 'five'}">KARTA </div>
   </div>
 
   <div class="nav-menu mobile">
@@ -21,6 +25,8 @@
 
 <div id="nav-menu-mobile" ng-if="mobile">
   <div class="nav-btn mobile" ng-click="goto(0)" ng-class="{'bold': state == 'one'}">HEM</div>
-  <div class="nav-btn mobile" ng-click="goto('#tickets')" ng-class="{'bold': state == 'two'}">BILJETTER</div>
-  <div class="nav-btn mobile" ng-click="goto('#karta')" ng-class="{'bold': state == 'three'}">KARTA</div>
+  <div class="nav-btn mobile" ng-click="goto('#artists')" ng-class="{'bold': state == 'two'}">ARTISTER</div>
+  <div class="nav-btn mobile" ng-click="goto('#info')" ng-class="{'bold': state == 'four'}">INFO</div>
+  <div class="nav-btn mobile" ng-click="goto('#tickets')" ng-class="{'bold': state == 'three'}">BILJETTER</div>
+  <div class="nav-btn mobile" ng-click="goto('#karta')" ng-class="{'bold': state == 'five'}">KARTA</div>
 </div>
