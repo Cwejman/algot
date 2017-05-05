@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<div id="artists">
+
+  <div class="head white">
+
+    <div>
+
+      <p class="head-title black">
+        ARTISTER
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <div class="artists-container">
+
+    <div class="artists-frame" ng-class-odd="'odd'" ng-repeat="artist in artists track by $index">
+      <div class="artists-artist" ng-click="go(artist.link)" style="background-image: url(res/artists/{{ artist.name | file }}.jpg)">
+
+      </div>
+      <div class="artists-artist-info">
+        {{ artist.name + ' [' + artist.info + ']' }}
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+</div>

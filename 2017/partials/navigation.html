@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<div id="navigation" data-ng-init="resize()">
+
+
+  <div id="navigation-bar" ng-class="{'navigation-main': down != true }">
+
+    <div id="navigation-logo">
+
+      <img ng-show="down" src="res/images/logo.png"/>
+
+    </div>
+
+    <div ng-if="!mobile" id="navigation-menu">
+      <div ng-class="{'navigation-menu-button-main': down != true || expand == true}" class="navigation-menu-button thin" ng-click="goto('artists')" ng-class="{'bold': state == 'gallery'}">ARTISTER</div>
+      <div ng-class="{'navigation-menu-spacer-main': down != true || expand == true}" class="navigation-menu-spacer gray">&nbsp;|&nbsp;</div>
+      <div ng-class="{'navigation-menu-button-main': down != true || expand == true}" class="navigation-menu-button thin" ng-click="goto('tickets')" ng-class="{'bold': state == 'gallery'}">BILJETTER</div>
+      <div ng-class="{'navigation-menu-spacer-main': down != true || expand == true}" class="navigation-menu-spacer gray">&nbsp;|&nbsp;</div>
+      <div ng-class="{'navigation-menu-button-main': down != true || expand == true}" class="navigation-menu-button thin" ng-click="goto('info')" ng-class="{'bold': state == 'gallery'}">INFORMATION</div>
+    </div>
+
+    <i ng-if="mobile" ng-click="click()" class="ion-navicon" ng-class="{'ion-navicon': !expand, 'ion-android-close': expand}"> </i>
+
+  </div>
+
+
+
+  <div id="navigation-menu-mobile" ng-class="{'navigation-menu-mobile-main': down != true}" ng-if="expand" class="navigation-white">
+
+    <div class="navigation-menu-mobile-button" ng-click="goto('artists')">ARTISTER</div>
+    <div class="navigation-menu-mobile-button" ng-click="goto('tickets')">BILJETTER</div>
+    <div class="navigation-menu-mobile-button" ng-click="goto('info')">INFORMATION</div>
+
+  </div>
+
+</div>

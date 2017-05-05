@@ -1,0 +1,355 @@
+
+@media (max-width: 440px) {
+  #main {
+    height: 80vh !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .artists-artist {
+    height: 200px !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .artists-frame {
+    width: 100% !important;
+    margin: 0 !important;
+    max-width: none !important;
+
+  }
+}
+
+@media (min-width: 1000px) {
+
+}
+
+/**/
+
+body {
+  background-color: white;
+  font-family: Roboto Condensed;
+  font-weight: 100;
+  color: black;
+  margin: 0;
+  width: 100%;
+}
+
+hr {
+  width: 60px;
+  margin: 20px auto;
+}
+
+a {
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.label {
+  color: white;
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin: 0 8px;
+}
+
+.odd {
+  margin-right: 40px;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+.second-paragraph {
+  margin-top: 0 !important;
+}
+
+.bold {
+  font-weight: 400
+}
+
+.top {
+  margin-top: 30px;
+}
+
+.background {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.white {
+  color: white !important;
+}
+
+.black {
+  color: #262626 !important;
+}
+
+.head {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head > div {
+  padding: 100px 0;
+}
+
+.head-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+.head-text {
+  font-size: 18px;
+  max-width: 800px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: -5px 40px 0;
+}
+
+.title {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  height: 150px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  background-color: #262626;
+  color: white;
+  background-size: cover;
+  box-shadow: 0px 5px 66px -10px rgba(0,0,0,0.4);
+  /*border-bottom: 5px solid rgb(242, 185, 51)*/
+}
+
+.content {
+  padding: 80px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(../res/images/bakgrund.jpg);
+  background-position: center;
+}
+
+#main-logo {
+  width: 60vw;
+  max-width: 400px;
+  padding-top: 25px;
+}
+
+#main-logo > img {
+  width: 100%;
+}
+
+#main-arrow {
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative !important;
+}
+
+#navigation {
+  position: fixed;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+#navigation-bar {
+  height: 65px;
+  width: 100vw;
+  z-index: 100;
+  font-weight: 400;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigation-menu-mobile {
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 10px;c
+}
+
+.navigation-menu-mobile-main {
+  background-color: rgba(169, 207, 235, 0) !important;
+}
+
+#navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 20px;
+}
+
+.navigation-menu-mobile-button {
+  padding: 10px;
+}
+
+.navigation-main {
+  background-color: rgba(115, 15, 142, 0) !important;
+  font-weight: 200 !important;
+}
+
+.navigation-menu-button-main {
+  transition: color 0.3s, background-color 0.3s;
+  color: white;
+  background-color: black;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin: 0 8px;
+}
+.navigation-menu-spacer-main {
+  display: none;
+}
+
+.navigation-menu-button {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.navigation-menu-button:hover {
+
+}
+
+.navigation-menu-spacer {
+  margin: 0 5px;
+}
+
+#navigation-logo {
+  height: 25px;
+  margin-left: 15px;
+  margin-top: 5px;;
+}
+
+#navigation-logo > img {
+  margin-top: -2px;
+  height: 100%;
+  z-index: 12;
+  transition: 1s all !important;
+}
+
+#navigation-bar > i {
+  font-size: 35px;
+  line-height: 30px;
+  padding: 15px 20px;
+}
+
+.artists-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.artists-artist {
+  height: 300px;
+  width: calc(50vw - 60px);
+  max-width: 480px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #2d2f33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.artists-artist-info {
+  height: 65px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.artist-frame {
+  width: calc(50vw - 100px);
+  max-width: 480px;
+}
+
+#artists > .content {
+  padding-top: 0px !important;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  height: 150px;
+}
