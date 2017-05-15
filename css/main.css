@@ -226,10 +226,6 @@ a:hover {
   padding: 0 0 10px;c
 }
 
-.navigation-menu-mobile-main {
-  background-color: rgba(169, 207, 235, 0) !important;
-}
-
 #navigation-menu {
   display: -webkit-box;
   display: -ms-flexbox;
