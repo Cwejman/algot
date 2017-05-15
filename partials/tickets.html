@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<div id="tickets">
+
+  <div class="head background normal" style="background-image: url(res/images/bakgrund.jpg)">
+
+    <div>
+
+      <p class="head-title label">
+        BILJETTER
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <h1>Köp biljett via Swish!</h1>
+
+    <p>I meddelandet i Swish-betalningen anger du ditt personnummer (ÅÅMMDD) samt för- och efternamn. Endast en biljett per Swish-betalning är möjlig. Om du vill Swisha åt en vän anger du i meddelandet din väns personnummer, mobiltelefonnummer samt hens för- och efternamn.</p>
+
+    <p>Biljettpris (inklusive medlemskap i Algotföreningen): 300kr</p>
+    <p>Swisha till: <i>1231961754</i></p>
+
+    En sms-bekräftelse på ditt biljettköp är att vänta inom en vecka!
+
+    <div id="tickets-button" ng-click="changeState(1)">
+      Betala utan Swish
+    </div>
+
+    <p class="tickets-box" ng-if="state == 1">
+      Psst! Om du inte vill betala via Swish så skicka ett mail med ditt för- och efternamn samt personnummer (ÅÅMMDD) till biljetter@algotfestivalen.se så svarar vi inom en vecka.
+    </p>
+
+
+
+
+  </div>
+
+</div>

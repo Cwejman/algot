@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 25px;
+}
+
 .label {
   color: white;
   background-color: black;
@@ -160,6 +164,7 @@ a:hover {
           justify-content: space-between;
   background-image: url(../res/images/bakgrund.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 #main-logo {
@@ -335,6 +340,20 @@ a:hover {
 
 #artists > .content {
   padding-top: 0px !important;
+}
+
+.content {
+  text-align: center;
+}
+
+#tickets-button {
+  padding: 4px 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 20px auto;
+  width: 130px;
+  cursor: pointer;
+  display: block;
 }
 
 #footer {

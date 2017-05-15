@@ -71,26 +71,32 @@ angular.module('controllers', [])
 
   $scope.artists = [
     {
-      name: "THE NAIMA TRAIN",
-      link: "https://open.spotify.com/artist/1Lar7KTWe5CeISnpNx3x7U",
-      info: "FREDAG"
-    },
-
-    {
       name: "HANNAH PRESCOTT",
       link: "",
-      info: "FREDAG"
+      info: ""
     },
     {
-      name: "FX-RAY",
-      link: "http://soundcloud.com/fx-ray/",
-      info: "FREDAG"
-    }
+      name: "PRESENCE",
+      link: "",
+      info: ""
+    },
   ]
 
 })
 
 .controller('TicketsCtrl', function ($scope) {
+
+  $scope.state = 0
+
+  $scope.changeState = function (state) {
+    if (this.state == state) this.state = 0
+    else {
+      this.state = state
+      // $('html, body').animate({
+      //   scrollTop: $('#scrollme').offset().top
+      // }, 1000)
+    }
+  }
 
 })
 
