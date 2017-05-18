@@ -21,7 +21,7 @@ angular.module('controllers', [])
 
   $scope.scroll = function() {
 
-    if ($window.scrollY > $window.innerHeight - 66)
+    if ($window.scrollY > $window.innerHeight - 67)
       $scope.down = true
     else
       $scope.down = false
