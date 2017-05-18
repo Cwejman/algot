@@ -14,7 +14,7 @@ angular.module('controllers', [])
     $scope.expand = false
 
     $('html, body').animate({
-      scrollTop: angular.element(document.getElementById(element)).prop('offsetTop') - 65
+      scrollTop: angular.element(document.getElementById(element)).prop('offsetTop') - 64
     }, 1000)
 
   }
