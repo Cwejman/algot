@@ -72,12 +72,12 @@ angular.module('controllers', [])
   $scope.artists = [
     {
       name: "HANNAH PRESCOTT",
-      link: "",
+      link: "https://soundcloud.com/hypsmusic/mixumdansooo",
       info: ""
     },
     {
       name: "PRESENCE",
-      link: "",
+      link: "https://www.facebook.com/songsofpresence",
       info: ""
     },
   ]
