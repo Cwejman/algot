@@ -76,7 +76,7 @@ angular.module('controllers', [])
       info: ""
     },
     {
-      name: "PRESENCE",
+      name: "OLIVER GANSLANDT",
       link: "https://www.facebook.com/songsofpresence",
       info: ""
     },
