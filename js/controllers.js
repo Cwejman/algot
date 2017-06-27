@@ -71,6 +71,11 @@ angular.module('controllers', [])
 
   $scope.artists = [
     {
+      name: "INDIGORADO",
+      link: "https://www.facebook.com/indigoradomusic/",
+      info: ""
+    },
+    {
       name: "HANNAH PRESCOTT",
       link: "https://soundcloud.com/hypsmusic/mixumdansooo",
       info: ""
@@ -80,6 +85,21 @@ angular.module('controllers', [])
       link: "https://www.facebook.com/songsofpresence",
       info: ""
     },
+    {
+      name: "MAPLE RYE",
+      link: "https://www.facebook.com/mapleandrye/",
+      info: ""
+    },
+    {
+      name: "POMONA DREAM",
+      link: "https://www.facebook.com/pomonadream/",
+      info: ""
+    },
+    {
+      name: "ÅSKA SAGA",
+      link: "https://www.facebook.com/askasaga111",
+      info: ""
+    }
   ]
 
 })
