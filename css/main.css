@@ -3,6 +3,9 @@
   #main {
     height: 80vh !important;
   }
+  #swish {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 750px) {

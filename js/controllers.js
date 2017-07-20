@@ -71,8 +71,18 @@ angular.module('controllers', [])
 
   $scope.artists = [
     {
-      name: "INDIGORADO",
-      link: "https://www.facebook.com/indigoradomusic/",
+      name: "CMS-SK",
+      link: "https://vimeo.com/188008085",
+      info: ""
+    },
+    {
+      name: "DJ LOVEFUNK",
+      link: "https://soundcloud.com/dj-lovefuck",
+      info: ""
+    },
+    {
+      name: "GUNGFLY",
+      link: "https://www.facebook.com/Gungfly-179474678770565/",
       info: ""
     },
     {
@@ -81,8 +91,18 @@ angular.module('controllers', [])
       info: ""
     },
     {
-      name: "OLIVER GANSLANDT",
-      link: "https://www.facebook.com/songsofpresence",
+      name: "INDIGORADO",
+      link: "https://www.facebook.com/indigoradomusic/",
+      info: ""
+    },
+    {
+      name: "JANNIS DÜSTER",
+      link: "https://soundcloud.com/jannis-d-ster",
+      info: ""
+    },
+    {
+      name: "LARS LANGOS",
+      link: "https://soundcloud.com/lars-langos",
       info: ""
     },
     {
@@ -91,8 +111,23 @@ angular.module('controllers', [])
       info: ""
     },
     {
+      name: "OLIVER GANSLANDT",
+      link: "https://www.facebook.com/songsofpresence",
+      info: ""
+    },
+    {
+      name: "ORKAN",
+      link: "https://www.facebook.com/Bandetorkan",
+      info: ""
+    },
+    {
       name: "POMONA DREAM",
       link: "https://www.facebook.com/pomonadream/",
+      info: ""
+    },
+    {
+      name: "PEDROS",
+      link: "https://www.facebook.com/pedrosofsweden/",
       info: ""
     },
     {
